@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import './App.css'
 
 function NavBar() {
@@ -49,11 +50,13 @@ function Guilds() {
 
 function GuildTile(props) {
     return (
-        <div className='guild-tile'>
-            <div className='guild-icon'></div>
-            <h2>{props.name}</h2>
-            <p>{props.info}</p>
-        </div>
+        <Link to="/guild">
+            <div className='guild-tile'>
+                <div className='guild-icon'></div>
+                <h2>{props.name}</h2>
+                <p>{props.info}</p>
+            </div>
+        </Link>
     )
 }
 
