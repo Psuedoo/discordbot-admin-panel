@@ -1,0 +1,87 @@
+:root {
+    --yellow: #F2C14E;
+    --orange: #F78154;
+    --green: #87BBA2;
+    --blue: #457EAC;
+    --dark-blue: #2D5D7B;
+}
+
+/* * { border: 1px solid red; } */
+
+body {
+    background-color: var(--blue);
+}
+
+li {
+    list-style: none;
+}
+
+.guild-selection-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    margin: 0;
+    padding: 10px;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-items {
+    display: flex;
+    color: white;
+    font-size: 25px;
+}
+
+.screen-title {
+    color: white;
+    align-self: center;
+}
+
+.guilds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* box-shadow: 5px 5px 40px black; */
+
+}
+
+.guild-tile {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 295px;
+    padding: 10px;
+    margin: 20px;
+    /* padding: 100px; */
+    /* margin: 100px; */
+    background-color: var(--yellow);
+    border-radius: 55px;
+    cursor: pointer;
+    /* box-shadow: inset -19px -25px 10px rgba(0, 0, 0, 0.25); */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px black;
+
+}
+
+.guild-tile:enabled {
+    box-shadow: none;
+    /* box-shadow: 5px 5px 40px black; */
+}
+
+.guild-icon {
+    height: 100px;
+    width: 100px;
+    margin-top: 25px;
+    background-color: var(--orange);
+    border-radius: 100%;
+}
+
+.config-item {
+    display: flex;
+    flex-direction: row;
+}
